@@ -21,6 +21,6 @@ jobs:
     - name: Publish Docker
       uses: elgohr/Publish-Docker-Github-Action@2.8
       with:
-        name: ${{GITHUB_REPOSITORY}} 
+        name: ${{ github.repository }} 
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }} 
